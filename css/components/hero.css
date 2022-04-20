@@ -1,0 +1,26 @@
+.hero {
+    /* wip */
+    height: min(100vh, 60rem);
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    margin-top: -4.5rem;
+
+    /* dev */
+    background-color: var(--grey);
+    --text-color: var(--white);
+}
+
+.hero-small {
+    /* wip */
+    height: min(70vh, 40rem);
+    padding: 2rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: -4.5rem;
+
+    /* dev */
+    background-color: var(--grey);
+    --text-color: var(--white);
+}

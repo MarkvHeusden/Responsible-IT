@@ -1,0 +1,7 @@
+button:focus {
+    color: var(--black);
+    background-color: var(--link-focus-color);
+    text-decoration: none;
+    border: none;
+    outline: 3px solid var(--black);
+}

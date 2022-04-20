@@ -1,0 +1,17 @@
+:root {
+    --black: #0b0c0c;
+    --dark-grey: #212526;
+    --grey: #505a5f;
+    --light-grey: #f3f2f1;
+    --white: #fff;
+    --yellow: #fd0;
+    --light-blue: #1d70b8;
+    --blue: #003078;
+    --hva-purple: #25167a;
+
+    --text-color: var(--black);
+    --link-color: var(--light-blue);
+    --link-hover-color: var(--blue);
+    --link-focus-color: var(--yellow);
+    --background-color: var(--white);
+}

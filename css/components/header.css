@@ -1,0 +1,40 @@
+.main-header {
+    background-color: var(--white);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -5px 15px 3px rgb(0 0 0 / 10%);
+}
+
+/* dev */
+.header-black {
+    background-color: var(--black);
+    --nav-link-color: var(--white);
+}
+
+.header-container {
+    /* wip */
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-logo-link {
+    display: inline-block;
+}
+
+/* wip */
+.header-logo-link:focus {
+    /* background-color: var(--grey); */
+}
+
+.header-logo {
+    width: 15rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .header-logo {
+        width: 20rem;
+    }
+}
