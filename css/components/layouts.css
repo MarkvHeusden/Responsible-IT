@@ -1,5 +1,4 @@
 /* wip */
-.main-wrapper,
 .width-container {
     width: calc(100% - 2rem);
     max-width: 75rem;
@@ -7,15 +6,11 @@
     padding: 1rem;
 }
 
-.main-wrapper {
-    /* dev */
-    border: 2px dashed var(--grey);
-}
-
 main {
     /* wip */
-    margin: 2rem 0;
-    scroll-margin-top: 2rem;
+    /* margin: 2rem 0; */
+    margin-bottom: 2rem;
+    /* scroll-margin-top: 2rem; */
 }
 
 /* dev */
@@ -39,6 +34,10 @@ main {
 
     .grid-1-2 {
         grid-template-columns: 1fr 2fr;
+
+        /* dev */
+        grid-gap: 1rem;
+        margin-right: 2rem;
     }
 
     .grid-1-1-1 {
@@ -53,7 +52,7 @@ main {
 }
 
 @media (min-width: 75em) {
-    .grid-row {
+    /* .grid-row {
         grid-gap: 3rem;
-    }
+    } */
 }

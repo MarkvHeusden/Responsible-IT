@@ -1,51 +1,3 @@
-.menu-button {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: var(--black);
-    /* color: var(--nav-link-color, var(--black)); */
-    background: none;
-    cursor: pointer;
-    font-size: inherit;
-
-    /* wip */
-    background-color: var(--light-grey);
-    padding: 0.5em 0.75em;
-    box-shadow: 0 2px 0 #929191;
-}
-
-.menu-button:hover {
-    background-color: #ebeae9;
-    /* wip */
-    /* text-decoration: solid underline 3px;
-    text-underline-offset: 0.15em; */
-}
-
-.menu-button:after {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-    border-width: 9px 5px 0 5px;
-    border-top-color: inherit;
-    margin-left: 5px;
-}
-
-.nav-opened .nav-button:after {
-    transform: rotateX(180deg);
-}
-
-.accessibility-button {
-    /* wip, class names aanpassen secundairy & media query nodig als 100% teveel is op desktop */
-    width: 100%;
-}
-
 /* .header-nav-item {
     height: 100%;
 }
@@ -84,7 +36,7 @@
     }
 }
 
-@media screen and (max-width: 75rem) {
+@media screen and (max-width: 62rem) {
     .header-nav {
         display: none;
     }
@@ -99,7 +51,7 @@
     }
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 62rem) {
     .nav-button {
         display: none;
     }
