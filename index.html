@@ -11,23 +11,30 @@
         <a href="#main" class="skip-to-content-link">Skip to main content</a>
         <header class="main-header">
             <div class="header-container width-container">
-                <a class="header-logo-link" href="./"
-                    ><img class="header-logo" src="./img/logo.svg" alt="Hogeschool van Amsterdam logo"
-                /></a>
-                <button class="nav-button menu-button" aria-label="Open of verberg menu">Menu</button>
+                <a class="header-logo-link" href="/"><img class="header-logo" src="/img/logo.svg" alt="Hogeschool van Amsterdam logo" /></a>
+                <button class="nav-button menu-button" aria-label="open or close main navigation">Menu</button>
                 <nav class="header-nav">
                     <ul>
                         <li class="header-nav-item"><a class="header-nav-link" href="/pages/components.html">Components</a></li>
                         <li class="header-nav-item"><a class="header-nav-link" href="/pages/test-pages.html">Test pages</a></li>
                         <!-- <li class="header-nav-item"><a class="header-nav-link" href="./content2.html">Content variatie</a></li> -->
                         <li class="header-nav-item">
-                            <button class="menu-button accessibility-button" href="">Accessibility Controls</button>
+                            <button class="menu-button accessibility-button" aria-label="open or close accessibility controls menu">
+                                Accessibility Controls
+                            </button>
+                            <ul class="accessibility-dropdown">
+                                <li class="dropdown-item"><a href="">Accessibility option 1</a></li>
+                                <li class="dropdown-item"><a href="">Accessibility option 2</a></li>
+                                <li class="dropdown-item"><a href="">Accessibility option 3</a></li>
+                                <li class="dropdown-item"><a href="">Accessibility option 4</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="hero-small">
+        <div class="hero-big">
+            <img class="hero-img" src="/img/hero-img/art.jpeg" alt="" />
             <div class="hero-content column-middle">
                 <h1 class="heading-xl">Responsible IT</h1>
                 <p>

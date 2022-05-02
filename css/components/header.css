@@ -2,7 +2,7 @@
     background-color: var(--white);
     position: relative;
     z-index: 1;
-    box-shadow: 0 -5px 15px 3px rgb(0 0 0 / 10%);
+    box-shadow: var(--subtle-shadow);
 }
 
 /* dev */
@@ -24,17 +24,104 @@
     display: inline-block;
 }
 
-/* wip */
-.header-logo-link:focus {
-    /* background-color: var(--grey); */
+.header-logo {
+    width: 13rem;
 }
 
-.header-logo {
-    width: 15rem;
+.header-nav-item {
+    position: relative;
+}
+
+/*
+.header-nav-item-active {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 0.2em;
+} */
+
+.header-nav-link {
+    font-weight: 600;
+    color: var(--nav-link-color, var(--link-color));
+    text-decoration: none;
+}
+
+.header-nav-link:hover {
+    color: var(--nav-link-color, var(--link-hover-color));
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 0.2em;
+}
+
+.header-nav-link:active {
+    color: var(--black);
+    /* background-color: none; */
+}
+
+.accessibility-dropdown {
+    display: none;
+}
+
+.menu-button-opened + .accessibility-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid var(--black); */
+    /* margin-top: -3px; */
+    /* background-color: var(--light-grey); */
+    /* background-color: var(--white); */
+    /* box-shadow: 0 -5px 15px 3px rgb(0 0 0 / 10%); */
+}
+
+.dropdown-item {
+    padding: 1.25rem 0;
 }
 
 @media screen and (min-width: 40rem) {
     .header-logo {
         width: 20rem;
+    }
+    .menu-button {
+        font-size: 1.19rem;
+    }
+}
+
+@media screen and (max-width: 62rem) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-nav-item {
+        padding-top: 2rem;
+    }
+
+    .menu-button-opened + .header-nav {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 62rem) {
+    .nav-button {
+        display: none;
+    }
+
+    .header-nav {
+        display: block;
+    }
+
+    .header-nav > ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .menu-button-opened + .accessibility-dropdown {
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: var(--subtle-shadow);
     }
 }

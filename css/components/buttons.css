@@ -20,11 +20,12 @@ button:hover {
     background-color: var(--dark-grey);
 }
 
-button:focus {
+/* dev!! */
+button:focus:not(.menu-button) {
     color: var(--black);
     background-color: var(--link-focus-color);
     text-decoration: none;
-    border: none;
+    /* border: none; */
     outline: 3px solid var(--black);
 }
 
@@ -52,15 +53,26 @@ button[aria-disabled='true'] {
     background-color: #aa2a16;
 }
 
-.menu-button {
-    width: auto;
+.secondary-button {
     color: var(--black);
     background-color: var(--light-grey);
     box-shadow: 0 2px 0 #929191;
 }
 
-.menu-button:hover {
+.secondary-button:hover {
     background-color: #ebeae9;
+}
+
+.menu-button {
+    width: auto;
+    color: var(--text-color);
+    background: none;
+    border: 3px solid var(--black);
+    box-shadow: none;
+}
+
+.menu-button:hover {
+    background-color: var(--white);
 }
 
 .menu-button:after {
@@ -74,7 +86,7 @@ button[aria-disabled='true'] {
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
     border-width: 9px 5px 0 5px;
     border-top-color: inherit;
-    margin-left: 5px;
+    margin-left: 0.5em;
 }
 
 .menu-button-opened:after {
