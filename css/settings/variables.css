@@ -9,10 +9,13 @@
     --blue: #003078;
     --hva-purple: #25167a;
 
+    --subtle-shadow: 0 -5px 15px 3px rgb(0 0 0 / 15%);
+
     --text-color: var(--black);
     --link-color: var(--light-blue);
     --link-hover-color: var(--blue);
-    --link-focus-color: var(--yellow);
+    /* --link-focus-color: var(--yellow); */
+    --link-focus-color: var(--white);
     --background-color: var(--white);
 
     /* --breakpoint-mobile: 40rem; */
