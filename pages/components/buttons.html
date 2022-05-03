@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/style.css" />
+        <script src="/js/loadPreferences.js"></script>
         <title>Responsible IT</title>
         <style>
             /* dev */
@@ -29,10 +30,11 @@
                                 Accessibility Controls
                             </button>
                             <ul class="accessibility-dropdown">
-                                <li class="dropdown-item"><a href="">Accessibility option 1</a></li>
-                                <li class="dropdown-item"><a href="">Accessibility option 2</a></li>
-                                <li class="dropdown-item"><a href="">Accessibility option 3</a></li>
-                                <li class="dropdown-item"><a href="">Accessibility option 4</a></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Increase fontsize</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Decrease fontsize</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Light/Dark mode</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Grayscale</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">High contrast</button></li>
                             </ul>
                         </li>
                     </ul>
@@ -65,7 +67,7 @@
                 <button class="menu-button">Open menu</button>
                 <button class="menu-button menu-button-opened">Close menu</button>
                 <h2 class="heading-l">Other buttons</h2>
-                <button>Black button</button>
+                <!-- <button>Black button</button> -->
                 <button class="warning-button">Warning button</button>
             </main>
         </div>
