@@ -8,6 +8,7 @@
     position: relative;
     margin-left: 0.6rem;
     padding-left: 1rem;
+    font-size: 0.875rem;
 }
 
 .breadcrumb-item::before {
@@ -37,7 +38,7 @@
 }
 
 .breadcrumb-link {
-    font-size: 0.875rem;
+    font-size: inherit;
     color: var(--text-color);
 }
 
@@ -79,7 +80,7 @@
     }
 
     .back-link,
-    .breadcrumb-link {
+    .breadcrumb-item {
         font-size: 1rem;
     }
 }

@@ -11,11 +11,11 @@ a:hover {
 }
 
 a:focus {
-    color: var(--black);
-    background-color: var(--link-focus-color);
+    color: var(--link-focus-color);
+    background-color: var(--link-focus-bg-color);
     text-decoration: none;
     border: none;
-    outline: 3px solid var(--black);
+    outline: 3px solid var(--link-focus-color);
 }
 
 /* nodig?? */
