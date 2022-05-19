@@ -29,7 +29,7 @@
     inset: 0;
 
     /* wip, iets breder maken nog */
-    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    background: radial-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 20%));
 }
 
 .hero-img {

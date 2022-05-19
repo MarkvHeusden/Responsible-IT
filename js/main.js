@@ -1,7 +1,7 @@
 // Accessibility controls
 const controls = document.querySelectorAll('.accessibility-toggle')
 
-const changeFontsize = size => {
+const changeFontsize = (size) => {
 	let currentFontSize = parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
 	if (size === 'increase') {
 		if (currentFontSize < 20) currentFontSize = currentFontSize + 2
@@ -18,14 +18,14 @@ const changeFontsize = size => {
 	root.style.fontSize = `${currentFontSize}px`
 }
 
-const toggleAccessibilityControl = control => {
+const toggleAccessibilityControl = (control) => {
 	if (root['dataset'][control] === 'true') {
-		root.setAttribute(`data-${control}`, 'false');
-		localStorage.setItem(control, 'false');
+		root.setAttribute(`data-${control}`, 'false')
+		localStorage.setItem(control, 'false')
 	}
     else {
-		root.setAttribute(`data-${control}`, 'true');
-		localStorage.setItem(control, 'true');
+		root.setAttribute(`data-${control}`, 'true')
+		localStorage.setItem(control, 'true')
     }    
 }
 
