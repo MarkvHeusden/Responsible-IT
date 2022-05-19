@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="/js/loadPreferences.js"></script>
+        <title>Responsible IT</title>
+    </head>
+    <body>
+        <a href="#main" class="skip-to-content-link">Skip to main content</a>
+        <header class="main-header">
+            <div class="header-container width-container">
+                <a class="header-logo-link" href="/"><img class="header-logo" src="/img/logo.svg" alt="Hogeschool van Amsterdam logo" /></a>
+                <button class="nav-button menu-button" aria-label="open or close main navigation">Menu</button>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-nav-item"><a class="header-nav-link" href="/pages/components.html">Components</a></li>
+                        <li class="header-nav-item"><a class="header-nav-link" href="/pages/test-pages.html">Test pages</a></li>
+                        <!-- <li class="header-nav-item"><a class="header-nav-link" href="./content2.html">Content variatie</a></li> -->
+                        <li class="header-nav-item">
+                            <button class="menu-button accessibility-button" aria-label="open or close accessibility controls menu">
+                                Accessibility Controls
+                            </button>
+                            <ul class="accessibility-dropdown">
+                                <li class="dropdown-item"><button class="accessibility-toggle">Increase fontsize</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Decrease fontsize</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Light/Dark mode</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">Grayscale</button></li>
+                                <li class="dropdown-item"><button class="accessibility-toggle">High contrast</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="hero-small">
+            <img class="hero-img" src="/img/hero-img/art.jpeg" alt="AI generated art" />
+            <div class="hero-content column-middle">
+                <h1 class="heading-xl">Text input</h1>
+                <p>
+                    Components are reusable parts of the user interface that have been made to support a variety of applications. You can
+                    use individual components in many different patterns and contexts.
+                </p>
+            </div>
+        </div>
+        <div class="width-container column-middle">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="/pages/components.html">Components</a></li>
+                <li class="breadcrumb-item">Input</li>
+            </ol>
+            <main id="main">
+                <form action="">
+                    <h2 class="heading-l"><label for="test-input">Text input</label></h2>
+                    <input id="test-input" type="text" />
+                </form>
+                <form class="form-error" action="">
+                    <h2 class="heading-l"><label for="test-input">Text input error</label></h2>
+                    <p class="error-message">Enter a username</p>
+                    <input id="test-input" type="text" />
+                </form>
+            </main>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-container width-container">
+                <span class="text-small">© Copyright 2022 Responsible IT - Hogeschool van Amsterdam</span>
+                <img class="footer-image" src="/img/hva-footer.png" alt="Creating Tomorrow" />
+            </div>
+        </footer>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
