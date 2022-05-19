@@ -16,9 +16,21 @@ body {
 
 ul,
 ol {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0;
 }
+
+/* wip */
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+cite {
+    font-style: normal;
+    font-weight: bold;
+}
+/*  */
 
 img,
 svg,
@@ -32,6 +44,13 @@ canvas {
 main {
     /* dev */
     min-height: 100vh;
+}
+
+/* Smooth scrolling if user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 /* dev */
