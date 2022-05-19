@@ -35,33 +35,48 @@
                 </nav>
             </div>
         </header>
-        <div class="width-container">
+        <div class="hero-small">
+            <img class="hero-img" src="/img/hero-img/art.jpeg" alt="AI generated art" />
+            <div class="hero-content column-middle">
+                <h1 class="heading-xl">Email cleanup tool</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat ad illum dolores repellendus tempora nulla hic
+                    tenetur explicabo labore nesciunt voluptatibus est quos accusantium atque cupiditate iste, similique obcaecati!
+                </p>
+            </div>
+        </div>
+        <div class="width-container column-middle">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></li>
-                <li class="breadcrumb-item">Test pages</li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="/pages/test-pages.html">Test pages</a></li>
+                <li class="breadcrumb-item">Email cleanup tool</li>
             </ol>
-            <div class="grid-row grid-1-2">
-                <nav class="sub-nav">
-                    <h2 class="heading-m">Test pages</h2>
-                    <ul>
-                        <li class="sub-nav-item">
-                            <a class="sub-nav-link" href="/pages/test-pages/email-cleanup.html">Email cleanup tool</a>
-                        </li>
-                        <li class="sub-nav-item">
-                            <a class="sub-nav-link" href="/pages/test-pages/recommendations.html">Recommendations</a>
-                        </li>
-                    </ul>
-                </nav>
-                <main id="main">
-                    <!-- <h1 class="heading-l">Components</h1>
+            <main id="main">
+                <article>
+                    <h2 class="heading-l">Business problem</h2>
                     <p>
-                        Components are reusable parts of the user interface that have been made to support a variety of applications. You
-                        can use individual components in many different patterns and contexts. For example, you can use the
-                        <a href="/pages/components/input.html">text input</a> component to ask for an email address, a National Insurance
-                        number or someone’s name.
-                    </p> -->
-                </main>
-            </div>
+                        Much of our received email is stored and never thrown away again. Full mailboxes are unclear and undesirable. Can we
+                        automatically clean up our mailboxes and throw away the worthless mails? For this, we must first have a clear
+                        definition of removable mail messages. This can be different per user. Standard cleanup tools within email programs
+                        such as Outlook exist, but that should be better.
+                    </p>
+                    <h2 class="heading-l">User stories (requirements specification)</h2>
+                    <h3 class="heading-m">Must haves</h3>
+                    <p>
+                        An interface that allows emails to be identified as valuable or worthless/removable items within an email program.
+                        In addition, a delete function with which removable items can be moved to the trash in one go. The language of the
+                        e-mail program and of the e-mails is an issue, an English-language program and Dutch-language e-mails can influence
+                        the interface, the interface must take this into account.
+                    </p>
+                    <h3 class="heading-m">Should haves</h3>
+                    <p>There should be an interface that allows the user to set which attributes make an email valuable or removable.</p>
+                    <h3 class="heading-m">Could haves</h3>
+                    <p>
+                        This algorithm should be able to learn through an interface where the user assesses which item falls into each
+                        category (valuable or removable).
+                    </p>
+                </article>
+            </main>
         </div>
         <footer class="main-footer">
             <div class="footer-container width-container">
