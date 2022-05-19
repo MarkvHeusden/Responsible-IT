@@ -18,6 +18,7 @@
 
     /* wip */
     margin: 2rem 0 1rem;
+    /* margin: 2rem 0; */
 }
 
 .heading-m {
@@ -29,6 +30,7 @@
 
     /* wip */
     margin: 1.5rem 0 1rem;
+    /* margin: 1.5rem 0; */
 }
 
 .heading-s {
@@ -57,7 +59,7 @@ p {
 @media (min-width: 40em) {
     .heading-xl {
         font-size: 3rem;
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
 
         /* wip */
         margin: 3rem 0 2rem;
@@ -65,26 +67,29 @@ p {
 
     .heading-l {
         font-size: 2.25rem;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
 
         /* wip */
-        margin: 2.5rem 0 1rem;
+        /* margin: 2.5rem 0 1rem; */
+        margin: 2.5rem 0 1.5rem;
     }
 
     .heading-m {
         font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+        /* margin-bottom: 1.5rem; */
 
         /* wip */
-        margin: 2.5rem 0 1rem;
+        /* margin: 2.5rem 0 1rem; */
+        margin: 2rem 0 1.5rem;
     }
 
     .heading-s {
         font-size: 1.19rem;
-        margin-bottom: 1.5rem;
+        /* margin-bottom: 1.5rem; */
 
         /* wip */
-        margin: 2rem 0 1rem;
+        /* margin: 2rem 0 1rem; */
+        margin: 1.5rem 0 1rem;
     }
 
     p {
