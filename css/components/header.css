@@ -6,8 +6,6 @@
 }
 
 .header-container {
-    /* wip */
-    padding: 1.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,10 +15,6 @@
 .header-logo-link {
     display: inline-block;
     padding: 0.5rem 0;
-}
-
-.header-logo {
-    /* width: 13rem; */
 }
 
 .header-nav-item {
@@ -57,7 +51,7 @@
     }
 }
 
-@media screen and (max-width: 73rem) {
+@media screen and (max-width: 72.999rem) {
     .header-logo-link {
         width: 70%;
         flex-basis: 60%;
