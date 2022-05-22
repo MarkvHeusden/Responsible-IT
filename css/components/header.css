@@ -16,11 +16,11 @@
 
 .header-logo-link {
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .header-logo {
-    width: 13rem;
+    /* width: 13rem; */
 }
 
 .header-nav-item {
@@ -58,6 +58,11 @@
 }
 
 @media screen and (max-width: 73rem) {
+    .header-logo-link {
+        width: 70%;
+        flex-basis: 60%;
+    }
+
     .header-nav {
         display: none;
     }
