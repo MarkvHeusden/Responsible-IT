@@ -38,6 +38,10 @@
     /* opacity: 0.6; */
 }
 
+.accessibility-toggle:focus {
+    outline-offset: -3px;
+}
+
 .accessibility-toggle span {
     width: 1.34rem;
     pointer-events: none;
