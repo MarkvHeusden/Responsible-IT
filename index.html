@@ -18,18 +18,38 @@
                     <ul>
                         <li class="header-nav-item"><a class="header-nav-link" href="./pages/components.html">Components</a></li>
                         <li class="header-nav-item"><a class="header-nav-link" href="./pages/test-pages.html">Test pages</a></li>
-                        <!-- <li class="header-nav-item"><a class="header-nav-link" href="./content2.html">Content variatie</a></li> -->
                         <li class="header-nav-item">
                             <button class="menu-button accessibility-button" aria-label="open or close accessibility controls menu">
                                 Accessibility Controls
                             </button>
-                            <ul class="accessibility-dropdown">
-                                <li class="dropdown-item"><button class="accessibility-toggle">Increase fontsize</button></li>
-                                <li class="dropdown-item"><button class="accessibility-toggle">Decrease fontsize</button></li>
-                                <li class="dropdown-item"><button class="accessibility-toggle">Light/Dark mode</button></li>
-                                <li class="dropdown-item"><button class="accessibility-toggle">Grayscale</button></li>
-                                <li class="dropdown-item"><button class="accessibility-toggle">High contrast</button></li>
-                            </ul>
+                            <menu class="accessibility-dropdown">
+                                <li>
+                                    <button class="accessibility-toggle">Increase font <span aria-hidden="true">+</span></button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">Decrease font<span aria-hidden="true">-</span></button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">
+                                        Dark theme<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">
+                                        Grayscale<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">
+                                        High contrast<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button class="accessibility-toggle">
+                                        Hide artwork<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                            </menu>
                         </li>
                     </ul>
                 </nav>
@@ -40,8 +60,8 @@
             <div class="hero-content column-middle">
                 <h1 class="heading-xl">Responsible IT</h1>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolore dolorem harum temporibus tenetur, ullam magni
-                    repellat delectus iure obcaecati quaerat ab. Dolores ducimus incidunt at consectetur amet repellat impedit.
+                    The Responsible IT lectureship works on methods and techniques for developers, designers, product owners and users, so
+                    that from their roles they can contribute to digital products that are reliable, safe, fair and have people's trust.
                 </p>
             </div>
         </div>
