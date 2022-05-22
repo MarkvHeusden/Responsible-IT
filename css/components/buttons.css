@@ -96,26 +96,6 @@ button[aria-disabled='true'] {
     transform: rotateX(180deg);
 }
 
-.accessibility-toggle {
-    background: transparent;
-    color: var(--text-color);
-    box-shadow: none;
-    width: 100%;
-    padding: 1rem 2rem;
-}
-
-.accessibility-toggle:focus {
-    /* color: var(--text-color);
-    border: 3px solid var(--link-focus-color);
-    padding: calc(1rem - 3px) calc(2rem - 3px); */
-    /* outline: 2px solid var(--link-focus-color); */
-}
-
-.accessibility-toggle:hover {
-    border-color: transparent;
-    background-color: var(--menu-button-hover);
-}
-
 @media (min-width: 40em) {
     button {
         font-size: 1.19rem;

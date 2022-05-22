@@ -1,16 +1,8 @@
-/* wip */
 .width-container {
     width: calc(100% - 2rem);
     max-width: 75rem;
     margin: 0 auto;
     padding: 1rem;
-}
-
-main {
-    /* wip */
-    /* margin: 2rem 0; */
-    margin-bottom: 2rem;
-    /* scroll-margin-top: 2rem; */
 }
 
 /* dev */
