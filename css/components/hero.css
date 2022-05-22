@@ -1,6 +1,5 @@
 .hero-big,
 .hero-small {
-    padding: 2rem;
     display: grid;
     place-items: center;
     margin-top: -4.5rem;
