@@ -10,18 +10,16 @@ a:hover {
     color: var(--link-hover-color);
 }
 
+a:visited {
+    color: var(--link-visited-color);
+}
+
 a:focus {
     color: var(--link-focus-color);
     background-color: var(--link-focus-bg-color);
     text-decoration: none;
     border: none;
     outline: 3px solid var(--link-focus-color);
-}
-
-/* nodig?? */
-a:active {
-    color: var(--black);
-    background-color: none;
 }
 
 @media (min-width: 40em) {
