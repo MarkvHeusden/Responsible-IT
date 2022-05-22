@@ -31,7 +31,7 @@ input[type='text']:focus {
     border-color: var(--red);
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
     input {
         font-size: 1.19rem;
     }

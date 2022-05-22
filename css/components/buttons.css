@@ -91,7 +91,7 @@ button[aria-disabled='true'] {
     transform: rotateX(180deg);
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
     button {
         font-size: 1.19rem;
         width: auto;

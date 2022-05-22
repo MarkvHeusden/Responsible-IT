@@ -22,7 +22,7 @@
     text-decoration-thickness: 0.2em;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
     .sub-nav-link {
         font-size: 1rem;
     }
