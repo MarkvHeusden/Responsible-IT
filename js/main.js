@@ -34,6 +34,7 @@ controls[1].addEventListener('click', () => changeFontsize('decrease'))
 controls[2].addEventListener('click', () => toggleAccessibilityControl('darktheme'))
 controls[3].addEventListener('click', () => toggleAccessibilityControl('grayscale'))
 controls[4].addEventListener('click', () => toggleAccessibilityControl('highcontrast'))
+controls[5].addEventListener('click', () => toggleAccessibilityControl('hideartwork'))
 
 // Toggle all menu buttons
 const menuButtons = document.querySelectorAll('.menu-button')
@@ -42,3 +43,11 @@ menuButtons.forEach(btn => {
 		btn.classList.toggle('menu-button-opened')
 	})
 })
+
+// Close accessibility menu when clicking outside of it
+window.addEventListener('mouseup', (e) => {
+	const accessibilityMenu = document.querySelector('.accessibility-dropdown')
+    if (e.target.parentNode.parentNode !== accessibilityMenu &&  e.target !== menuButtons[1]) {
+        menuButtons[1].classList.remove('menu-button-opened')
+    }
+});
