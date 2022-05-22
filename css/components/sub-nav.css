@@ -12,6 +12,10 @@
     text-decoration: none;
 }
 
+.sub-nav-link:visited {
+    color: var(--link-color);
+}
+
 .sub-nav-link:hover {
     text-decoration: underline;
     text-underline-offset: 0.1em;

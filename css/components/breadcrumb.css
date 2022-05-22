@@ -37,13 +37,15 @@
     display: none;
 }
 
-.breadcrumb-link {
+.breadcrumb-link,
+.breadcrumb-link:visited {
     font-size: inherit;
     color: var(--text-color);
 }
 
 /* Back-link */
-.back-link {
+.back-link,
+.back-link:visited {
     font-size: 0.875rem;
     color: var(--text-color);
     position: relative;
