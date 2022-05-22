@@ -1,7 +1,7 @@
 // Accessibility controls
 const controls = document.querySelectorAll('.accessibility-toggle')
 
-const changeFontsize = (size) => {
+const changeFontSize = (size) => {
 	let currentFontSize = parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
 	if (size === 'increase') {
 		if (currentFontSize < 20) currentFontSize = currentFontSize + 2
@@ -10,8 +10,8 @@ const changeFontsize = (size) => {
 	}
 
 	// Disable buttons if value is out of range
-	currentFontSize === 20 ? controls[0].ariaDisabled = "true" : controls[0].ariaDisabled = "false"
-	currentFontSize === 12 ? controls[1].ariaDisabled = "true" : controls[1].ariaDisabled = "false"
+	currentFontSize >= 20 ? controls[0].ariaDisabled = "true" : controls[0].ariaDisabled = "false"
+	currentFontSize <= 12 ? controls[1].ariaDisabled = "true" : controls[1].ariaDisabled = "false"
 
 	// Store & set new value
 	localStorage.setItem('font-size', `${currentFontSize}px` )
@@ -29,8 +29,8 @@ const toggleAccessibilityControl = (control) => {
     }    
 }
 
-controls[0].addEventListener('click', () => changeFontsize('increase'))
-controls[1].addEventListener('click', () => changeFontsize('decrease'))
+controls[0].addEventListener('click', () => changeFontSize('increase'))
+controls[1].addEventListener('click', () => changeFontSize('decrease'))
 controls[2].addEventListener('click', () => toggleAccessibilityControl('darktheme'))
 controls[3].addEventListener('click', () => toggleAccessibilityControl('grayscale'))
 controls[4].addEventListener('click', () => toggleAccessibilityControl('highcontrast'))
