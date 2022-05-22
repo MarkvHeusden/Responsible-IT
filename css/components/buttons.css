@@ -64,14 +64,9 @@ button[aria-disabled='true'] {
 }
 
 .menu-button:focus {
-    /* background-color: var(--menu-button-hover);
-    color: var(--text-color); */
-
-    /* outline: 0;
-    border: 3px solid var(--link-focus-color); */
-
-    /* dev!! */
-    outline: 2px solid var(--link-focus-color);
+    /* outline: 2px solid var(--link-focus-color); */
+    outline: 0;
+    border: 3px dashed var(--text-color);
 }
 
 .menu-button:hover {
