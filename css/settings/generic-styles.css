@@ -19,6 +19,14 @@ body {
     background-color: var(--background-color);
 }
 
+main {
+    scroll-margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    /* dev */
+    min-height: 100vh;
+}
+
 ul,
 ol,
 menu {
@@ -35,10 +43,7 @@ canvas {
     height: auto;
 }
 
-main {
-    scroll-margin-top: 2rem;
-    margin-bottom: 2rem;
-
-    /* dev */
-    min-height: 100vh;
+cite {
+    font-style: normal;
+    font-weight: 700;
 }
