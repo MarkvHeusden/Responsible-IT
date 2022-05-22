@@ -13,7 +13,7 @@ if (localStorage.getItem('darktheme')) {
     root.setAttribute('data-darktheme', 'true')
 }
 // Get filter preferences
-const storedPreferences = ['grayscale', 'highcontrast']
+const storedPreferences = ['grayscale', 'highcontrast', 'hideartwork']
 storedPreferences.forEach(preference => {
     const preferenceValue = localStorage.getItem(preference)
     if (preferenceValue) root.setAttribute(`data-${preference}`, preferenceValue)
