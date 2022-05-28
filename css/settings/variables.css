@@ -17,7 +17,6 @@
     --link-color: var(--light-blue);
     --link-visited-color: var(--hva-purple);
     --link-hover-color: var(--blue);
-    /* --link-focus-bg-color: var(--yellow); */
     --link-focus-bg-color: var(--white);
     --link-focus-color: var(--black);
     --background-color: var(--white);

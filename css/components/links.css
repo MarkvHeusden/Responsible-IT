@@ -15,11 +15,12 @@ a:visited {
 }
 
 a:focus {
-    color: var(--link-focus-color);
+    /* color: var(--link-focus-color); */
     background-color: var(--link-focus-bg-color);
     text-decoration: none;
     border: none;
     outline: 3px solid var(--link-focus-color);
+    outline-offset: 3px;
 }
 
 @media (min-width: 40rem) {

@@ -37,18 +37,9 @@
 }
 
 /* Check checkboxes if toggle is selected */
-[data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after {
-    opacity: 1;
-}
-
-[data-grayscale='true'] .accessibility-dropdown > li:nth-of-type(4) .accessibility-toggle-checkbox::after {
-    opacity: 1;
-}
-
-[data-highcontrast='true'] .accessibility-dropdown > li:nth-of-type(5) .accessibility-toggle-checkbox::after {
-    opacity: 1;
-}
-
+[data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after,
+[data-grayscale='true'] .accessibility-dropdown > li:nth-of-type(4) .accessibility-toggle-checkbox::after,
+[data-highcontrast='true'] .accessibility-dropdown > li:nth-of-type(5) .accessibility-toggle-checkbox::after,
 [data-hideartwork='true'] .accessibility-dropdown > li:nth-of-type(6) .accessibility-toggle-checkbox::after {
     opacity: 1;
 }

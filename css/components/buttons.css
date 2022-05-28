@@ -12,7 +12,6 @@ button {
     position: relative;
 }
 
-/* dev!! */
 button:focus {
     color: var(--link-focus-color);
     background-color: var(--link-focus-bg-color);
@@ -23,7 +22,6 @@ button:focus {
 button[aria-disabled='true'] {
     opacity: 0.5;
     pointer-events: none;
-    /* cursor: not-allowed; */
 }
 
 .primary-button {
@@ -53,7 +51,7 @@ button[aria-disabled='true'] {
 }
 
 .secondary-button:hover {
-    background-color: #ebeae9;
+    filter: invert(0.075);
 }
 
 .menu-button {
@@ -64,13 +62,12 @@ button[aria-disabled='true'] {
 }
 
 .menu-button:focus {
-    /* outline: 2px solid var(--link-focus-color); */
     outline: 0;
     border: 3px dashed var(--text-color);
 }
 
 .menu-button:hover {
-    background-color: var(--menu-button-hover);
+    /* background-color: var(--menu-button-hover); */
 }
 
 .menu-button:after {

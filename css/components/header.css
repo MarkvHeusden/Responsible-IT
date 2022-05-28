@@ -21,12 +21,11 @@
     position: relative;
 }
 
-/*
 .header-nav-item-active {
     text-decoration: underline;
     text-underline-offset: 0.15em;
     text-decoration-thickness: 0.2em;
-} */
+}
 
 .header-nav-link,
 .header-nav-link:visited {
