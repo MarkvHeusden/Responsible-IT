@@ -47,3 +47,8 @@ cite {
     font-style: normal;
     font-weight: 700;
 }
+
+::selection {
+    background-color: var(--yellow);
+    color: var(--black);
+}
