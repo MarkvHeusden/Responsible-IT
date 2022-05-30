@@ -1,0 +1,27 @@
+.filter-container h2 {
+    display: none;
+}
+
+.filter-menu {
+    display: none;
+}
+
+.filter-menu li {
+    display: inline-block;
+    margin: 0 0.25rem 0.5rem 0;
+}
+
+.menu-button-opened + .filter-menu {
+    display: block;
+}
+
+@media screen and (min-width: 40rem) {
+    .filter-menu,
+    .filter-container h2 {
+        display: block;
+    }
+
+    .filter-menu-button {
+        display: none;
+    }
+}
