@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="/js/loadPreferences.js"></script>
+        <title>Responsible IT</title>
+    </head>
+    <body>
+        <a href="#main" class="skip-to-content-link">Skip to main content</a>
+        <header class="main-header">
+            <div class="header-container width-container">
+                <a class="header-logo-link" href="/"><img class="header-logo" src="/img/logo.svg" alt="Hogeschool van Amsterdam logo" /></a>
+                <button class="nav-button menu-button" aria-label="open or close main navigation">Menu</button>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-nav-item"><a class="header-nav-link" href="/pages/components.html">Components</a></li>
+                        <li class="header-nav-item"><a class="header-nav-link" href="/pages/test-pages.html">Test pages</a></li>
+                        <li class="header-nav-item">
+                            <button class="menu-button accessibility-button" aria-label="open or close accessibility controls menu">
+                                Accessibility Controls
+                            </button>
+                            <menu class="accessibility-dropdown">
+                                <li>
+                                    <button class="accessibility-toggle">Increase font <span aria-hidden="true">+</span></button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">Decrease font<span aria-hidden="true">-</span></button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">
+                                        Dark theme<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">
+                                        Grayscale<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="accessibility-toggle">
+                                        High contrast<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                                <li class="dropdown-item">
+                                    <button class="accessibility-toggle">
+                                        Hide artwork<span class="accessibility-toggle-checkbox" aria-hidden="true"></span>
+                                    </button>
+                                </li>
+                            </menu>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="width-container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="/pages/test-pages.html">Test pages</a></li>
+                <li class="breadcrumb-item">List page</li>
+            </ol>
+            <div class="grid-row grid-1-2">
+                <div class="filter-container">
+                    <h2 class="heading-m">Filters</h2>
+                    <button class="menu-button filter-menu-button">Filters</button>
+                    <div class="filter-menu">
+                        <span class="heading-s">Filter on topic</span>
+                        <menu>
+                            <li><button class="filter-button filter-button-active">Artificial Intelligence</button></li>
+                            <li><button class="filter-button">Data</button></li>
+                            <li><button class="filter-button">Software Development</button></li>
+                            <li><button class="filter-button">Cybersecurity</button></li>
+                            <li><button class="filter-button">Quantum</button></li>
+                        </menu>
+                        <span class="heading-s">Filter on theme</span>
+                        <menu>
+                            <li><button class="filter-button filter-button-active">Fair</button></li>
+                            <li><button class="filter-button">Transparent</button></li>
+                            <li><button class="filter-button">Robust</button></li>
+                            <li><button class="filter-button">Inclusive</button></li>
+                            <li><button class="filter-button">Sustainable</button></li>
+                        </menu>
+                    </div>
+                </div>
+                <main id="main">
+                    <h1 class="heading-l">Components</h1>
+                    <p>
+                        Components are reusable parts of the user interface that have been made to support a variety of applications. You
+                        can use individual components in many different patterns and contexts. For example, you can use the
+                        <a href="/pages/components/input.html">text input</a> component to ask for an email address, a National Insurance
+                        number or someone’s name.
+                    </p>
+                </main>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-container width-container">
+                <span class="text-small">© Copyright 2022 Responsible IT - Hogeschool van Amsterdam</span>
+                <img class="footer-image" src="/img/hva-footer.png" alt="Creating Tomorrow" />
+            </div>
+        </footer>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
