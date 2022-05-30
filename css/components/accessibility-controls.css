@@ -43,6 +43,7 @@
 .accessibility-toggle span {
     width: 1.34rem;
     pointer-events: none;
+    border-radius: 0.3rem;
 }
 
 .accessibility-toggle span:not(.accessibility-toggle-checkbox) {

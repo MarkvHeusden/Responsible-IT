@@ -11,7 +11,8 @@ a:hover {
 }
 
 a:visited {
-    color: var(--link-visited-color);
+    /* color: var(--link-visited-color); */
+    color: var(--hva-purple);
 }
 
 a:focus {

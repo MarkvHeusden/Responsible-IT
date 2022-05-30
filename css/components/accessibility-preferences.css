@@ -1,8 +1,9 @@
 [data-darktheme='true'] {
     --text-color: var(--white);
     --background-color: var(--black-2);
+    --hva-purple: #7c77ff;
     --link-color: #1d9bf0;
-    --link-visited-color: #7c77ff;
+    /* --link-visited-color: #7c77ff; */
     --link-hover-color: #1d9bf0;
     --link-focus-bg-color: var(--black);
     --link-focus-color: var(--white);

@@ -10,6 +10,7 @@ button {
     width: 100%;
     padding: 0.5em 0.75em;
     position: relative;
+    border-radius: 0.5rem;
 }
 
 button:focus {
@@ -34,16 +35,6 @@ button[aria-disabled='true'] {
     background-color: #1962a3;
 }
 
-.warning-button {
-    color: var(--white);
-    background-color: var(--red);
-    box-shadow: 0 2px 0 #55150b;
-}
-
-.warning-button:hover {
-    background-color: #aa2a16;
-}
-
 .secondary-button {
     color: var(--black);
     background-color: var(--light-grey);
@@ -54,6 +45,45 @@ button[aria-disabled='true'] {
     filter: invert(0.075);
 }
 
+.warning-button {
+    color: var(--white);
+    background-color: var(--red);
+    box-shadow: 0 2px 0 #55150b;
+}
+
+.warning-button:hover {
+    background-color: #aa2a16;
+}
+
+.filter-button {
+    color: var(--hva-purple);
+    border: 2px solid var(--hva-purple);
+    background: none;
+    box-shadow: 0.2em 0.2em 0 var(--hva-purple);
+    transform: translate(-0.2em, -0.2em);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: auto;
+}
+
+.filter-button:focus {
+    box-shadow: 0 0 0 var(--hva-purple);
+    transform: translate(0, 0);
+    outline: 0;
+    border-style: dashed;
+}
+
+.filter-button:hover {
+    box-shadow: 0 0 0 var(--hva-purple);
+    transform: translate(0, 0);
+}
+
+.filter-button-active {
+    box-shadow: 0 0 0 var(--hva-purple);
+    transform: translate(0, 0);
+    background-color: var(--hva-purple);
+    color: var(--background-color);
+}
+
 .menu-button {
     width: auto;
     color: var(--text-color);
@@ -61,13 +91,13 @@ button[aria-disabled='true'] {
     border: 3px solid var(--text-color);
 }
 
+.menu-button:hover {
+    /* background-color: var(--menu-button-hover); */
+}
+
 .menu-button:focus {
     outline: 0;
     border: 3px dashed var(--text-color);
-}
-
-.menu-button:hover {
-    /* background-color: var(--menu-button-hover); */
 }
 
 .menu-button:after {
@@ -89,8 +119,11 @@ button[aria-disabled='true'] {
 }
 
 @media (min-width: 40rem) {
-    button {
+    button:not(.filter-button) {
         font-size: 1.19rem;
+    }
+
+    button {
         width: auto;
     }
 }
