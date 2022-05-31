@@ -32,7 +32,7 @@ button[aria-disabled='true'] {
 }
 
 .primary-button:hover {
-    background-color: #1962a3;
+    /* background-color: #1962a3; */
 }
 
 .secondary-button {
