@@ -5,6 +5,7 @@
 .accessibility-dropdown {
     margin: 0;
     display: none;
+    border-radius: 0.5rem;
 }
 
 .menu-button-opened + .accessibility-dropdown {
