@@ -2,10 +2,10 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 html {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
     transition: font-size 0.3s ease, filter 0.3s;
@@ -41,6 +41,23 @@ canvas {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
 
 cite {
