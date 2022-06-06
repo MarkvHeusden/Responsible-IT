@@ -38,7 +38,7 @@
 }
 
 .accessibility-toggle:focus {
-    outline-offset: -3px;
+    outline-offset: -1px;
 }
 
 .accessibility-toggle span {
@@ -93,6 +93,7 @@
         right: 0;
         background-color: var(--background-color);
         box-shadow: var(--subtle-shadow);
+        border: 2px solid var(--subtle-border);
     }
 
     .accessibility-dropdown li {
