@@ -5,10 +5,11 @@
     margin: 0 auto;
 }
 
+/* dev? 40rem */
 @media (min-width: 40rem) {
     .grid-row {
         display: grid;
-        grid-gap: 2rem;
+        grid-gap: 1rem;
     }
 
     .grid-2-1 {
@@ -16,7 +17,8 @@
     }
 
     .grid-1-2 {
-        grid-template-columns: 1fr 2fr;
+        /* dev? */
+        grid-template-columns: 0.8fr 2fr;
     }
 
     .grid-1-1-1 {
