@@ -56,31 +56,31 @@ button[aria-disabled='true'] {
 }
 
 .filter-button {
-    color: var(--hva-purple);
-    border: 2px solid var(--hva-purple);
+    color: var(--purple);
+    border: 1.5px solid var(--purple);
     background: none;
-    box-shadow: 0.2em 0.2em 0 var(--hva-purple);
-    transform: translate(-0.2em, -0.2em);
+    box-shadow: 0.1em 0.1em 0 var(--purple);
+    transform: translate(-0.1em, -0.1em);
     transition: transform 0.2s, box-shadow 0.2s;
     width: auto;
 }
 
 .filter-button:focus {
-    box-shadow: 0 0 0 var(--hva-purple);
+    box-shadow: 0 0 0 var(--purple);
     transform: translate(0, 0);
     outline: 0;
     border-style: dashed;
 }
 
 .filter-button:hover {
-    box-shadow: 0 0 0 var(--hva-purple);
+    box-shadow: 0 0 0 var(--purple);
     transform: translate(0, 0);
 }
 
 .filter-button-active {
-    box-shadow: 0 0 0 var(--hva-purple);
+    box-shadow: 0 0 0 var(--purple);
     transform: translate(0, 0);
-    background-color: var(--hva-purple);
+    background-color: var(--purple);
     color: var(--background-color);
 }
 
