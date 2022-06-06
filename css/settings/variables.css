@@ -7,11 +7,13 @@
     --white: #fff;
     --yellow: #fd0;
     --red: #d4351c;
+    --purple: #564a97;
     --hva-purple: #25167a;
     --blue: #003078;
     --light-blue: #1d70b8;
 
     --subtle-shadow: 0 5px 15px 3px rgb(0 0 0 / 5%);
+    --subtle-border: var(--light-grey);
 
     --text-color: var(--black);
     --link-color: var(--light-blue);
@@ -20,5 +22,7 @@
     --link-focus-bg-color: var(--white);
     --link-focus-color: var(--black);
     --background-color: var(--white);
+
+    /* --filter-button: var(--purple); */
     --menu-button-hover: #ebeae9;
 }
