@@ -11,6 +11,7 @@
     --subtle-shadow: none;
     --subtle-border: var(--dark-grey);
     /* --filter-button: var(--hva-purple); */
+    --filter-button-color: #b1bac8;
     --menu-button-hover: var(--black-2);
 }
 
@@ -40,11 +41,21 @@
     display: none;
 }
 
+[data-hideartwork='true'] .hero-artwork {
+    background-image: none !important;
+}
+
+[data-reducemotion='true'] :where(*, *::before, *::after) {
+    transition: none !important;
+    animation-play-state: paused !important;
+}
+
 /* Check checkboxes if toggle is selected */
 [data-darktheme='true'] .accessibility-dropdown > li:nth-of-type(3) .accessibility-toggle-checkbox::after,
 [data-grayscale='true'] .accessibility-dropdown > li:nth-of-type(4) .accessibility-toggle-checkbox::after,
 [data-highcontrast='true'] .accessibility-dropdown > li:nth-of-type(5) .accessibility-toggle-checkbox::after,
-[data-hideartwork='true'] .accessibility-dropdown > li:nth-of-type(6) .accessibility-toggle-checkbox::after {
+[data-hideartwork='true'] .accessibility-dropdown > li:nth-of-type(6) .accessibility-toggle-checkbox::after,
+[data-reducemotion='true'] .accessibility-dropdown > li:nth-of-type(7) .accessibility-toggle-checkbox::after {
     opacity: 1;
 }
 
@@ -58,5 +69,6 @@
     *::before,
     *::after {
         transition: none !important;
+        animation-play-state: paused !important;
     }
 }
