@@ -22,7 +22,8 @@
     --link-focus-bg-color: var(--white);
     --link-focus-color: var(--black);
     --background-color: var(--white);
+    --filter-button-color: #566072;
+    --menu-button-hover: #ebeae9;
 
     /* --filter-button: var(--purple); */
-    --menu-button-hover: #ebeae9;
 }
