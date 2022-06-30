@@ -1,7 +1,3 @@
-.filter-container h2 {
-    display: none;
-}
-
 .filter-menu {
     display: none;
 }
@@ -32,7 +28,6 @@
         opacity: 1;
     }
 
-    .filter-container h2,
     .filter-menu {
         display: block;
     }
