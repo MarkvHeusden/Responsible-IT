@@ -1,13 +1,13 @@
 /* ----- Artwork 1 ----- */
 
 .artwork-1 {
-    --s: 25vmin;
+    --s: 15vmin;
     --p: calc(var(--s) / 2);
-    --c1: var(--hva-purple);
+    --c1: var(--dark-grey);
     --c2: var(--light-blue);
     --c3: var(--black-2);
     --bg: var(--c3);
-    --d: 20000ms;
+    --d: 12000ms;
     --e: cubic-bezier(0.76, 0, 0.24, 1);
 
     background-color: var(--bg);
@@ -17,12 +17,7 @@
     background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
         calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
     animation: color var(--d) var(--e) infinite, position var(--d) var(--e) infinite;
-    /* animation-play-state: paused; */
 }
-
-/* .artwork-1:hover {
-    animation-play-state: running;
-} */
 
 @keyframes color {
     0%,
@@ -67,7 +62,7 @@
 }
 
 /* ----- Artwork 2 ----- */
-.rotator {
+/* .rotator {
     animation: rotateTriangleRotate 6s steps(1) infinite;
 }
 
@@ -174,11 +169,11 @@
     to {
         transform: scale(0.5);
     }
-}
+} */
 
 /* ----- Artwork 3 ----- */
 
-.artwork-3 {
+/* .artwork-3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -437,6 +432,34 @@
         -o-transform: rotateZ(120deg) translate(-50px, -80px);
         transform: rotateZ(120deg) translate(-50px, -80px);
     }
+} */
+
+/* Artwork 3 */
+.artwork-3 {
+    --s: 20vmin;
+    --p: calc(var(--s) / 2);
+    --c1: var(--red);
+    --c2: var(--light-grey);
+    --d: 10000ms;
+    --e: cubic-bezier(0.76, 0, 0.24, 1);
+
+    background-image: linear-gradient(45deg, var(--c1) 25%, transparent 25%), linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--c2) 75%), linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+    background-size: var(--s) var(--s);
+    background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
+        calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
+    animation: position3 var(--d) ease-in-out infinite alternate;
+}
+
+@keyframes position3 {
+    0% {
+        background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
+            calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
+    }
+    100% {
+        background-position: calc(var(--p) * 1) calc(var(--p) * 2), calc(var(--p) * -1) calc(var(--p) * 3),
+            calc(var(--p) * 1) calc(var(--p) * 1), calc(var(--p) * -1) calc(var(--p) * 2);
+    }
 }
 
 /* Artwork 4 */
@@ -453,25 +476,89 @@
     background-size: var(--s) var(--s);
     background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
         calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
-    animation: position2 var(--d) linear infinite;
+    animation: position4 var(--d) linear infinite;
 }
 
-@keyframes position2 {
+@keyframes position4 {
     0% {
         background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
             calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
     }
-    25% {
-        background-position: calc(var(--p) * 1) calc(var(--p) * 4), calc(var(--p) * -1) calc(var(--p) * 5),
-            calc(var(--p) * 1) calc(var(--p) * 3), calc(var(--p) * -1) calc(var(--p) * 4);
+    100% {
+        background-position: calc(var(--p) * 1) calc(var(--p) * 16), calc(var(--p) * -1) calc(var(--p) * 17),
+            calc(var(--p) * 1) calc(var(--p) * 15), calc(var(--p) * -1) calc(var(--p) * 16);
     }
-    50% {
-        background-position: calc(var(--p) * 1) calc(var(--p) * 8), calc(var(--p) * -1) calc(var(--p) * 9),
-            calc(var(--p) * 1) calc(var(--p) * 7), calc(var(--p) * -1) calc(var(--p) * 8);
+}
+
+/* Artwork 5 */
+.triangles-art5 {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 86.6px 50px;
+    border-color: transparent transparent var(--light-blue) transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: triangles-art5 25s ease-in forwards infinite;
+}
+.triangles-art5:nth-child(2) {
+    animation-delay: 2s;
+    left: 25%;
+    top: 40%;
+    animation-duration: 30s;
+}
+.triangles-art5:nth-child(3) {
+    animation-delay: 4s;
+    left: 75%;
+    top: 50%;
+}
+.triangles-art5:nth-child(4) {
+    animation-delay: 6s;
+    left: 90%;
+    top: 10%;
+    animation-duration: 20s;
+}
+.triangles-art5:nth-child(5) {
+    animation-delay: 8s;
+    left: 10%;
+    top: 85%;
+}
+.triangles-art5:nth-child(6) {
+    animation-delay: 10s;
+    left: 50%;
+    top: 10%;
+}
+
+@keyframes triangles-art5 {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
     }
-    75% {
-        background-position: calc(var(--p) * 1) calc(var(--p) * 12), calc(var(--p) * -1) calc(var(--p) * 13),
-            calc(var(--p) * 1) calc(var(--p) * 11), calc(var(--p) * -1) calc(var(--p) * 12);
+    to {
+        transform: scale(4) rotate(600deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* Artwork random */
+.artwork-random {
+    --p: calc(20vmin / 2);
+    background-image: linear-gradient(45deg, var(--c1, var(--purple)) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--c1, var(--purple)) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--c2, var(--dark-grey)) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--c2, var(--dark-grey)) 75%);
+    background-size: 20vmin 20vmin;
+    background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
+        calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
+    animation: position-down 50000ms linear infinite;
+}
+@keyframes position-down {
+    0% {
+        background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
+            calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
     }
     100% {
         background-position: calc(var(--p) * 1) calc(var(--p) * 16), calc(var(--p) * -1) calc(var(--p) * 17),
