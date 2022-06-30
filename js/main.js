@@ -29,6 +29,7 @@ const toggleAccessibilityControl = (control) => {
     }    
 }
 
+// Event listeners
 controls[0].addEventListener('click', () => changeFontSize('increase'))
 controls[1].addEventListener('click', () => changeFontSize('decrease'))
 controls[2].addEventListener('click', () => toggleAccessibilityControl('darktheme'))
@@ -51,4 +52,4 @@ window.addEventListener('mouseup', (e) => {
     if (e.target.parentNode.parentNode !== accessibilityMenu &&  e.target !== menuButtons[1]) {
         menuButtons[1].classList.remove('menu-button-opened')
     }
-});
+})
