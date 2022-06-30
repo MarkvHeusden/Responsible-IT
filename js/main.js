@@ -35,6 +35,7 @@ controls[2].addEventListener('click', () => toggleAccessibilityControl('darkthem
 controls[3].addEventListener('click', () => toggleAccessibilityControl('grayscale'))
 controls[4].addEventListener('click', () => toggleAccessibilityControl('highcontrast'))
 controls[5].addEventListener('click', () => toggleAccessibilityControl('hideartwork'))
+controls[6].addEventListener('click', () => toggleAccessibilityControl('reducemotion'))
 
 // Toggle all menu buttons
 const menuButtons = document.querySelectorAll('.menu-button')
