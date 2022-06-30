@@ -43,9 +43,13 @@
 
 [data-hideartwork='true'] .hero-artwork {
     background-image: none !important;
+    animation: none;
 }
 
-[data-reducemotion='true'] :where(*, *::before, *::after) {
+[data-reducemotion='true'],
+[data-reducemotion='true'] *,
+[data-reducemotion='true'] *::before,
+[data-reducemotion='true'] *::after {
     transition: none !important;
     animation-play-state: paused !important;
 }
