@@ -6,11 +6,13 @@
     --light-grey: #f3f2f1;
     --white: #fff;
     --yellow: #fd0;
+    --orange: #f3ad16;
     --red: #d4351c;
     --purple: #564a97;
     --hva-purple: #25167a;
     --blue: #003078;
     --light-blue: #1d70b8;
+    --green: #1eab14;
 
     --subtle-shadow: 0 5px 15px 3px rgb(0 0 0 / 5%);
     --subtle-border: var(--light-grey);
