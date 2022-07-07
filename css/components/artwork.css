@@ -61,379 +61,6 @@
     }
 }
 
-/* ----- Artwork 2 ----- */
-/* .rotator {
-    animation: rotateTriangleRotate 6s steps(1) infinite;
-}
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 300px;
-    animation: shrinkTriangleShrink 3s linear infinite;
-    color: var(--hva-purple);
-}
-
-.triangle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1em;
-    height: 0.866em;
-    margin-left: -0.5em;
-    margin-top: -0.5774em;
-    overflow: hidden;
-    transform-origin: 50% 66.666%;
-}
-.triangle::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0.707em;
-    height: 0.707em;
-    background: currentColor;
-    transform: translate(-50%, 50%) scaleY(1.732) rotate(45deg);
-}
-.triangle:nth-child(1) {
-    animation: growTrianglesGrow-1 3s infinite;
-}
-.triangle:nth-child(2) {
-    animation: growTrianglesGrow-2 3s infinite;
-}
-.triangle:nth-child(3) {
-    animation: growTrianglesGrow-3 3s infinite;
-}
-@keyframes growTrianglesGrow-1 {
-    from,
-    10% {
-        transform: scale(0) rotate(180deg) translateY(-66.1%);
-        color: #55efc4;
-    }
-    75% {
-        transform: scale(1) rotate(180deg) translateY(-66.1%);
-        color: #55efc4;
-    }
-    to {
-        transform: scale(1) rotate(180deg) translateY(-66.1%);
-        color: currentColor;
-    }
-}
-@keyframes growTrianglesGrow-2 {
-    from,
-    20% {
-        transform: scale(0) rotate(300deg) translateY(-66.1%);
-        color: #ffeaa7;
-    }
-    75% {
-        transform: scale(1) rotate(300deg) translateY(-66.1%);
-        color: #ffeaa7;
-    }
-    to {
-        transform: scale(1) rotate(300deg) translateY(-66.1%);
-        color: currentColor;
-    }
-}
-@keyframes growTrianglesGrow-3 {
-    from,
-    30% {
-        transform: scale(0) rotate(420deg) translateY(-66.1%);
-        color: #fd79a8;
-    }
-    75% {
-        transform: scale(1) rotate(420deg) translateY(-66.1%);
-        color: #fd79a8;
-    }
-    to {
-        transform: scale(1) rotate(420deg) translateY(-66.1%);
-        color: currentColor;
-    }
-}
-
-@keyframes rotateTriangleRotate {
-    from {
-        transform: rotate(0deg);
-    }
-    50%,
-    to {
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes shrinkTriangleShrink {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(0.5);
-    }
-} */
-
-/* ----- Artwork 3 ----- */
-
-/* .artwork-3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.artwork-3::after {
-    z-index: 14;
-}
-
-.artwork-3 .hero-content {
-    position: absolute;
-    z-index: 15;
-}
-
-.plane {
-    display: block;
-    height: 0;
-    width: 0;
-    overflow: visible;
-    transform-origin: 50% 50%;
-    transform: rotateZ(0deg) translate(-50px, 0);
-    -webkit-animation: spin 2.5s ease-in-out alternate infinite;
-    -moz-animation: spin 2.5s ease-in-out alternate infinite;
-    -o-animation: spin 2.5s ease-in-out alternate infinite;
-    animation: spin 2.5s ease-in-out alternate infinite;
-}
-.plane:nth-of-type(odd) .triangles {
-    background-color: #fff;
-}
-.plane:nth-of-type(even) .triangles {
-    background-color: #000;
-}
-
-.triangles {
-    position: absolute;
-    border-top-right-radius: 45%;
-    transform-origin: -50% 50%;
-    transform: rotateZ(-60deg) skewX(-30deg) scale(1, 0.866);
-}
-.triangles:before,
-.triangles:after {
-    content: '';
-    position: absolute;
-    background-color: inherit;
-    border-top-right-radius: 45%;
-}
-.triangles:before {
-    box-shadow: -6px -5px 10px 3px rgba(0, 0, 0, 0.075);
-    -webkit-transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
-    -moz-transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
-    -ms-transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
-    -o-transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
-    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
-}
-.triangles:after {
-    box-shadow: 14px -1px 10px -6px rgba(0, 0, 0, 0.075);
-    -webkit-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
-    -moz-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
-    -ms-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
-    -o-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
-    transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
-}
-
-.plane:nth-of-type(1) {
-    z-index: 14;
-    animation-delay: 0.045s;
-}
-
-.plane:nth-of-type(1) .triangles,
-.plane:nth-of-type(1) .triangles:before,
-.plane:nth-of-type(1) .triangles:after {
-    width: 0.75em;
-    height: 0.75em;
-}
-
-.plane:nth-of-type(2) {
-    z-index: 13;
-    animation-delay: 0.09s;
-}
-
-.plane:nth-of-type(2) .triangles,
-.plane:nth-of-type(2) .triangles:before,
-.plane:nth-of-type(2) .triangles:after {
-    width: 1.5em;
-    height: 1.5em;
-}
-
-.plane:nth-of-type(3) {
-    z-index: 12;
-    animation-delay: 0.135s;
-}
-
-.plane:nth-of-type(3) .triangles,
-.plane:nth-of-type(3) .triangles:before,
-.plane:nth-of-type(3) .triangles:after {
-    width: 2.25em;
-    height: 2.25em;
-}
-
-.plane:nth-of-type(4) {
-    z-index: 11;
-    animation-delay: 0.18s;
-}
-
-.plane:nth-of-type(4) .triangles,
-.plane:nth-of-type(4) .triangles:before,
-.plane:nth-of-type(4) .triangles:after {
-    width: 3em;
-    height: 3em;
-}
-
-.plane:nth-of-type(5) {
-    z-index: 10;
-    animation-delay: 0.225s;
-}
-
-.plane:nth-of-type(5) .triangles,
-.plane:nth-of-type(5) .triangles:before,
-.plane:nth-of-type(5) .triangles:after {
-    width: 3.75em;
-    height: 3.75em;
-}
-
-.plane:nth-of-type(6) {
-    z-index: 9;
-    animation-delay: 0.27s;
-}
-
-.plane:nth-of-type(6) .triangles,
-.plane:nth-of-type(6) .triangles:before,
-.plane:nth-of-type(6) .triangles:after {
-    width: 4.5em;
-    height: 4.5em;
-}
-
-.plane:nth-of-type(7) {
-    z-index: 8;
-    animation-delay: 0.315s;
-}
-
-.plane:nth-of-type(7) .triangles,
-.plane:nth-of-type(7) .triangles:before,
-.plane:nth-of-type(7) .triangles:after {
-    width: 5.25em;
-    height: 5.25em;
-}
-
-.plane:nth-of-type(8) {
-    z-index: 7;
-    animation-delay: 0.36s;
-}
-
-.plane:nth-of-type(8) .triangles,
-.plane:nth-of-type(8) .triangles:before,
-.plane:nth-of-type(8) .triangles:after {
-    width: 6em;
-    height: 6em;
-}
-
-.plane:nth-of-type(9) {
-    z-index: 6;
-    animation-delay: 0.405s;
-}
-
-.plane:nth-of-type(9) .triangles,
-.plane:nth-of-type(9) .triangles:before,
-.plane:nth-of-type(9) .triangles:after {
-    width: 6.75em;
-    height: 6.75em;
-}
-
-.plane:nth-of-type(10) {
-    z-index: 5;
-    animation-delay: 0.45s;
-}
-
-.plane:nth-of-type(10) .triangles,
-.plane:nth-of-type(10) .triangles:before,
-.plane:nth-of-type(10) .triangles:after {
-    width: 7.5em;
-    height: 7.5em;
-}
-
-.plane:nth-of-type(11) {
-    z-index: 4;
-    animation-delay: 0.495s;
-}
-
-.plane:nth-of-type(11) .triangles,
-.plane:nth-of-type(11) .triangles:before,
-.plane:nth-of-type(11) .triangles:after {
-    width: 8.25em;
-    height: 8.25em;
-}
-
-.plane:nth-of-type(12) {
-    z-index: 3;
-    animation-delay: 0.54s;
-}
-
-.plane:nth-of-type(12) .triangles,
-.plane:nth-of-type(12) .triangles:before,
-.plane:nth-of-type(12) .triangles:after {
-    width: 9em;
-    height: 9em;
-}
-
-.plane:nth-of-type(13) {
-    z-index: 2;
-    animation-delay: 0.585s;
-}
-
-.plane:nth-of-type(13) .triangles,
-.plane:nth-of-type(13) .triangles:before,
-.plane:nth-of-type(13) .triangles:after {
-    width: 9.75em;
-    height: 9.75em;
-}
-
-.plane:nth-of-type(14) {
-    z-index: 1;
-    animation-delay: 0.63s;
-}
-
-.plane:nth-of-type(14) .triangles,
-.plane:nth-of-type(14) .triangles:before,
-.plane:nth-of-type(14) .triangles:after {
-    width: 10.5em;
-    height: 10.5em;
-}
-
-.plane:nth-of-type(15) {
-    z-index: 0;
-    animation-delay: 0.675s;
-}
-
-.plane:nth-of-type(15) .triangles,
-.plane:nth-of-type(15) .triangles:before,
-.plane:nth-of-type(15) .triangles:after {
-    width: 11.25em;
-    height: 11.25em;
-}
-
-@keyframes spin {
-    0% {
-        -webkit-transform: rotateZ(0deg) translate(-50px, 0);
-        -moz-transform: rotateZ(0deg) translate(-50px, 0);
-        -o-transform: rotateZ(0deg) translate(-50px, 0);
-        transform: rotateZ(0deg) translate(-50px, 0);
-    }
-    100% {
-        -webkit-transform: rotateZ(120deg) translate(-50px, -80px);
-        -moz-transform: rotateZ(120deg) translate(-50px, -80px);
-        -o-transform: rotateZ(120deg) translate(-50px, -80px);
-        transform: rotateZ(120deg) translate(-50px, -80px);
-    }
-} */
-
 /* Artwork 3 */
 .artwork-3 {
     --s: 20vmin;
@@ -554,7 +181,7 @@
     background-size: var(--s) var(--s);
     background-position: calc(var(--p) * 1) calc(var(--p) * 0), calc(var(--p) * -1) calc(var(--p) * 1),
         calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
-    animation: position-down 50000ms linear infinite;
+    animation: position-down 15s linear infinite;
 }
 @keyframes position-down {
     0% {
@@ -562,7 +189,29 @@
             calc(var(--p) * 1) calc(var(--p) * -1), calc(var(--p) * -1) calc(var(--p) * 0);
     }
     100% {
-        background-position: calc(var(--p) * 1) calc(var(--p) * 16), calc(var(--p) * -1) calc(var(--p) * 17),
-            calc(var(--p) * 1) calc(var(--p) * 15), calc(var(--p) * -1) calc(var(--p) * 16);
+        background-position: calc(var(--p) * 1) calc(var(--p) * 4), calc(var(--p) * -1) calc(var(--p) * 5),
+            calc(var(--p) * 1) calc(var(--p) * 3), calc(var(--p) * -1) calc(var(--p) * 4);
+    }
+}
+
+/* Artwork random 2 */
+.artwork-random-2 {
+    --ring-size: 1.5rem;
+    --grow-speed: 8s;
+    background-image: repeating-radial-gradient(
+        closest-side circle,
+        var(--c1, var(--orange)) calc(100% - var(--ring-size) * 2) calc(100% - var(--ring-size)),
+        transparent calc(100% - var(--ring-size)) 100%
+    );
+    background-position: 50% 50%;
+    animation: grow var(--grow-speed) linear infinite;
+}
+
+@keyframes grow {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: calc(100% + var(--ring-size) * 4) calc(100% + var(--ring-size) * 4);
     }
 }
