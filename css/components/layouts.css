@@ -5,7 +5,6 @@
     margin: 0 auto;
 }
 
-/* dev? 40rem */
 @media (min-width: 40rem) {
     .grid-row {
         display: grid;

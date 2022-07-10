@@ -22,8 +22,6 @@ body {
 main {
     scroll-margin-top: 2rem;
     margin-bottom: 2rem;
-
-    /* dev */
     min-height: 100vh;
 }
 

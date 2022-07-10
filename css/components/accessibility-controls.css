@@ -32,11 +32,6 @@
     padding: 0.5em 0.75em;
 }
 
-.accessibility-toggle:hover {
-    /* background-color: var(--menu-button-hover); */
-    /* opacity: 0.6; */
-}
-
 .accessibility-toggle:focus {
     outline-offset: -1px;
 }
