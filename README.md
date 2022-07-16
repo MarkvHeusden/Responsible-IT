@@ -85,4 +85,4 @@ De uitkomst van al deze dingen is een prototype van een website, die middels een
 
 <img src="./docs/lighthouse.png" width="50%" />
 
--   Mark van Heusden 16-07-2022
+~ Mark van Heusden 16-07-2022
